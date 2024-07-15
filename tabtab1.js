@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // SELEZIONE: RAPID BOX || PULIZIA INIZIALE
         const generatore_blocchi_preimpostato_row = document.getElementById('generatore_blocchi_preimpostato_row');
-        Array.from(generatore_blocchi_preimpostato_row.children).forEach(child => child.style.display = 'none');
+        if (generatore_blocchi_preimpostato_row.children.length) [...generatore_blocchi_preimpostato_row.children].forEach(child => generatore_blocchi_preimpostato_row.removeChild(child));
 
         // SELEZIONE: RAPID BOX || CARICAMENTO BOX PREIMPOSTATI TRAMITE IL TASTO 'RAPID BOX'
         for (let i = 0; i < 7; i++) {
