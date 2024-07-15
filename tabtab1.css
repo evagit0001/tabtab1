@@ -1,0 +1,960 @@
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 98%;
+    height: 98%;
+
+    min-width: 1200px;
+    max-width: 1200px;
+
+    padding: 10px;
+
+}
+
+.tabella {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    max-width: 1200px;
+    width: 90%;
+    height: 650px;
+    min-height: 650px;
+    max-height: 650px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px / 5px;
+    
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    
+    background-image: linear-gradient(to bottom, rgba(255, 214, 214, 0.75) -5%, rgb(255, 255, 255) 5% 95%, rgba(217, 255, 199, 0.75) 105%);
+}
+
+.tabella_cont {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    width: 6%;
+    height: auto;
+
+    margin: 10px;
+}
+
+.tabella_cont_2 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    width: 14%;
+    height: auto;
+
+    margin: 10px;
+}
+
+.tabella_cont_3 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    width: 80%;
+    height: auto;
+
+    margin: 10px;
+}
+
+.tabella_box_colonne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 42%;
+}
+
+.tabella_box_colonne_ecc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 16%;
+}
+
+.tabella_box_colonne_upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 50%;
+}
+
+.tabella_box_colonne_upper_colonna_y {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgb(50, 22, 22);
+
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    box-shadow: -11px 0px 4px -2px rgb(50, 22, 22);
+
+    user-select: none;
+}
+
+.tabella_box_colonne_upper_colonna_y_shaded_1 {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgba(50, 22, 22, 0.66);
+
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    user-select: none;
+}
+
+.tabella_box_colonne_upper_colonna_y_shaded_2 {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgba(50, 22, 22, 0.329);
+
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+
+    user-select: none;
+}
+
+.tabella_box_colonne_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 42%;
+}
+
+.tabella_box_colonne_2_spaziotesto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+
+    padding: 5px;
+    
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(0, 0, 0);
+    
+    background-color: #1f321654;
+    
+    cursor: pointer;
+    user-select: none;
+
+    /*DEDICATO AL RESIZE DELL'HOVER*/
+    white-space: nowrap;
+    transition: transform 0.2s;
+    will-change: transform, opacity;
+}
+
+.tabella_box_colonne_2_spaziotesto:hover {
+    /*DEDICATO AL RESIZE DELL'HOVER*/
+    transform: scale(0.93);
+}
+
+.tabella_box_colonne_2_spaziotesto_specificazione {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+
+    padding: 5px;
+
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(0, 0, 0);
+    
+    background-color: #1f321654;
+    
+    cursor: pointer;
+    user-select: none;
+
+    /*DEDICATO AL RESIZE DELL'HOVER*/
+    white-space: nowrap;
+    transition: transform 0.2s;
+    will-change: transform, opacity;
+}
+
+.tabella_box_colonne_2_spaziotesto_specificazione:hover {
+    /*DEDICATO AL RESIZE DELL'HOVER*/
+    transform: scale(0.93);
+}
+
+.ss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 18%;
+
+    margin: 2px;
+
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(255, 255, 255);
+
+    background-color: #1f3216;
+
+    user-select: none;
+}
+
+.tabella_box_colonne_2_ecc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 16%;
+}
+
+.tabella_box_colonne_2_upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+.tabella_box_colonne_2_upper_spaziotesto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80%;
+
+    padding: 5px;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(0, 0, 0);
+
+    background-color: rgba(50, 22, 22, 0.329);
+
+    user-select: none;
+}
+
+.tabella_box_colonne_colonna_x {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgb(31, 50, 22);
+
+    margin-top: 129px;
+    margin-bottom: 129px;
+
+    box-shadow: -11px 0px 4px -2px rgb(31, 50, 22);
+
+    user-select: none;
+}
+
+.tabella_box_colonne_colonna_x_shaded_1 {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgba(31, 50, 22, 0.66);
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    user-select: none;
+}
+
+.tabella_box_colonne_colonna_x_shaded_2 {
+    display: flex;
+    flex-direction: row;
+
+    width: 6px;
+    height: auto;
+
+    background-color: rgba(31, 50, 22, 0.329);
+
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+
+    user-select: none;
+}
+
+.tabella_box_colonne_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 84%;
+}
+
+.tabella_box_colonne_3_ecc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 16%;
+}
+
+.tabella_box_colonne_3_upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+}
+
+.tabella_box_colonne_3_upper_spaziotesto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 12%;
+    height: 80%;
+
+    padding: 5px;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(0, 0, 0);
+
+    background-color: rgba(50, 22, 22, 0.329);
+
+    user-select: none;
+}
+
+.starter_modifier {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 97%;
+
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: #1f321654;
+}
+
+.starter_modifier_settaggi_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 50%;
+    height: 92%;
+
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: rgb(31, 50, 22);
+    color: white;
+
+    margin: 20px;
+}
+
+.starter_modifier_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 91%;
+    height: 25%;
+
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: rgb(71, 89, 62);
+    color: white;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px / 5px;
+    border-width: 2px;
+
+    margin: 12px;
+
+    user-select: none;
+}
+
+.elementoform_e_testo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    height: auto;
+    width: 100%;
+}
+
+#eet2 {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+}
+
+#eet2.show {
+    opacity: 1;
+}
+
+.checkbox_pers {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 17px;
+    width: 17px;
+    height: 17px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-size: 1.1em;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px / 5px;
+    border-width: 1px;
+    
+    background-color: rgb(85, 85, 85);
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.checkbox_pers:hover {
+    background-color: rgb(132, 132, 132);
+}
+
+.checkbox_pers:active {
+    background-color: rgb(187, 187, 187);
+}
+
+.testo {
+    align-content: center;
+    
+    width: 100%;
+    height: 30px;
+
+    margin-right: 15px;
+
+    color: white;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    user-select: none;
+}
+
+.input_pers {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 51px;
+    width: 51px;
+    height: 17px;
+
+    margin-left: 24px;
+    margin-right: 24px;
+
+    font-size: 1em;
+    text-align: center;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px / 5px;
+    border-width: 1px;
+
+    color: white;
+    
+    background-color: rgb(85, 85, 85);
+
+    user-select: none;
+}
+
+.divisor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    height: auto;
+    width: 100%;
+}
+
+.trattino {
+    display: flex;
+    align-items: center;
+    
+    height: 10px;
+    
+    color: #ffffff;
+    font-size: 1.5em;
+
+    user-select: none;
+}
+
+.gestione_colore_dei_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 88%;
+    min-height: 50px;
+    max-height: 120px;
+
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: rgb(89, 62, 62);
+    color: white;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px / 5px;
+    border-width: 2px;
+
+    padding: 5px;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+    user-select: none;
+
+    overflow-y: auto;
+}
+
+/* Personalizzazione della barra di scorrimento per i browser WebKit/Blink */
+.gestione_colore_dei_box::-webkit-scrollbar {
+    width: 12px; /* Larghezza della barra di scorrimento */
+}
+
+.gestione_colore_dei_box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); /* Colore di sfondo della traccia della barra di scorrimento */
+}
+
+.gestione_colore_dei_box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Colore della barra di scorrimento */
+    border-radius: 10px; /* Arrotonda gli angoli della barra di scorrimento */
+}
+
+.button_applica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 40px;
+
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: rgb(71, 89, 62);
+    color: white;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px / 5px;
+    border-width: 2px;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    
+    cursor: pointer;
+    
+    user-select: none;
+
+    transform: scale(1);
+    will-change: transform;
+
+    transition: transform 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.button_applica:hover {
+    background-color: rgba(71, 89, 62, 0.66);
+    font-size: 1.4em;
+    transform: scale(0.95);
+}
+
+.button_applica:active {
+    background-color: rgba(71, 89, 62, 0.33);
+    font-size: 1.3em;
+}
+
+.rounded_palette {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 20px;
+    width: 44%;
+    height: 100%;
+
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+}
+
+.text_color_choise_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 75%;
+    height: 150px;
+    margin: 20px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px / 5px;
+    border-width: 2px;
+}
+
+.text_color_choise_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 96%;
+    height: 25%;
+
+    padding: 5px;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: black;
+    
+    user-select: none;
+}
+
+/*SCELTA DEL NERO*/
+.text_color_choise_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 10%;
+    height: 15%;
+
+    background-color: black;
+
+    cursor: pointer;
+    
+    user-select: none;
+    overflow: hidden;
+}
+
+/*SCELTA DEL BIANCO*/
+.text_color_choise_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 10%;
+    height: 15%;
+
+    background-color: white;
+
+    cursor: pointer;
+    
+    user-select: none;
+    overflow: hidden;
+}
+
+.generatore_blocchi {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    max-width: 1200px;
+    width: 90%;
+    height: 100px;
+    min-height: 100px;
+
+    transition: height 0.2s ease;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px / 5px;
+    border-width: 1px;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+    background-image: linear-gradient(to bottom, rgba(255, 214, 214, 0.75) -5%, rgb(255, 255, 255) 5% 95%, rgba(217, 255, 199, 0.75) 105%);
+}
+
+#generatore_blocchi {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+}
+
+#generatore_blocchi.show {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+}
+
+.generatore_blocchi_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+
+    margin: 10px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px / 5px;
+    border-width: 1px;
+}
+
+.box_stile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-transform: uppercase;
+    /*permette di andare a capo*/
+    resize: none;
+    overflow: hidden;
+
+    width: 109.84px;
+    height: 50.29px;
+
+    padding: 5px;
+    margin: 5px;
+
+    /*PADDING AUTOMATIZZATO*/
+    padding-top: 14px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px / 5px;
+    border-width: 1px;
+
+    font-size: 0.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    user-select: none;
+}
+
+.form_applica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button_successivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 40px;
+
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: rgba(71, 89, 62, 0.33);
+    color: rgb(0, 0, 0);
+
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px / 5px;
+    border-width: 2px;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+    margin-top: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    
+    cursor: pointer;
+
+    opacity: 1;
+    
+    user-select: none;
+
+    transform: scale(1);
+    will-change: transform, opacity;
+
+    transition: transform 0.3s ease, background-color 0.3s ease, font-size 0.3s ease, opacity 0.2s ease;
+}
+
+.button_successivo:hover {
+    background-color: rgba(71, 89, 62, 0.22);
+    font-size: 1.4em;
+    transform: scale(0.95);
+}
+
+.button_successivo:active {
+    background-color: rgba(71, 89, 62, 0.11);
+    font-size: 1.3em;
+}
+
+.tabella_finale_box {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 97%;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: #bababa54;
+}
+
+.tabella_finale_box_choise_full {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 98.5%;
+    height: 46.5%;
+
+    padding: 5px;
+}
+
+.tabella_finale_box_righe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 18%;
+}
+
+.tabella_finale_box_contenitori {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 12%;
+    height: 100%;
+
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(0, 0, 0);
+
+    background-color: rgba(50, 22, 22, 0.329);
+
+    user-select: none;
+}
+
+.dragging {
+    opacity: 0.5;
+}
